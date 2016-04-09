@@ -25,8 +25,6 @@ public abstract class AbstractCallback implements ICallback {
 			if (!TextUtils.isEmptyString(path)) {
 
 			} else {
-				HttpURLConnection ioConnection;
-				
 				return bindData(EntityUtils.toString(httpEntity));
 			}
 		case HttpStatus.SC_BAD_REQUEST:
